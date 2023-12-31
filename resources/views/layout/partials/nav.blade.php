@@ -13,7 +13,7 @@
 			<a href="#" class="nav-link text-white">Clientes</a>
 		</li>
 		<li class="w-100">
-			<a href="#" class="nav-link text-white active">Mascotas</a>
+			<a href="{{ route('pets.index') }}" class="nav-link text-white active">Mascotas</a>
 		</li>
 		<li>
 			<a href="#" class="nav-link text-white">Productos</a>
