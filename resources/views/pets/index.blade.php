@@ -3,11 +3,11 @@
 @section("content")
 
 <a href="{{ route('pets.create') }}">
-	<button>+ Crear registro</button>
+	<button type="button" class="btn btn-primary">Crear registro</button>
 </a>
 
 @if($pets->count())
-<table>
+<table class="table">
 	<thead>
 		<tr>
 			<th>Nombre</th>
@@ -23,6 +23,8 @@
 		@endforeach
 	</tbody>
 </table>
+
+{{ $pets->links() }}
 @else
 	<div>No hay registros...</div>
 @endif
