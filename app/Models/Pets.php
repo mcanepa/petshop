@@ -7,10 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Pets extends Model
 {
-    use HasFactory;
+	use HasFactory;
 
-    protected $fillable = [
-        "name",
-        "birthday",
-    ];
+	protected $fillable = [
+		"name",
+		"birthday",
+	];
 }

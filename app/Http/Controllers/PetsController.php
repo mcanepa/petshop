@@ -7,31 +7,36 @@ use Illuminate\Http\Request;
 
 class PetsController extends Controller
 {
-    public function index(Request $request)
-    {
-        $pets = Pets::paginate(10);
+	public function index(Request $request)
+	{
+		$pets = Pets::paginate(10);
 
-        return view("pets.index", compact("pets"));
-    }
+		return view("pets.index", compact("pets"));
+	}
 
-    public function create()
-    {
-        return view("pets.create");
-    }
+	public function create()
+	{
+		return view("pets.create");
+	}
 
-    public function store(Request $request)
-    {
-        try
-        {
-            $pet = new Pets;
+	public function store(Request $request)
+	{
+		try
+		{
+			$request->validate([
+				'name' => 'required',
+				'birthday' => 'required|date|before:tomorrow|date_format:Y-m-d',
+			]);
 
-            $pet->create($request->all());
+			$pet = new Pets;
 
-            return redirect()->route("pets.index")->withSuccess("Mascota creada correctamente!");
-        }
-        catch(\Exception $e)
-        {
-            return back()->withInput()->withErrors("Hubo un error: " . $e->getMessage());
-        }
-    }
+			$pet->create($request->all());
+
+			return redirect()->route("pets.index")->withSuccess("Mascota creada correctamente!");
+		}
+		catch(\Exception $e)
+		{
+			return back()->withInput()->withErrors("Hubo un error: " . $e->getMessage());
+		}
+	}
 }
