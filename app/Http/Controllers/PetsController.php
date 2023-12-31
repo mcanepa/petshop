@@ -24,7 +24,7 @@ class PetsController extends Controller
 		try
 		{
 			$request->validate([
-				'name' => 'required',
+				'name' => 'required|string',
 				'birthday' => 'required|date|before:tomorrow|date_format:Y-m-d',
 			]);
 
