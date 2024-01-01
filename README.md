@@ -54,6 +54,12 @@ DB_PASSWORD=tu_password
 
 Reemplaza ```el_nombre_de_la_base```, ```tu_usuario```, y ```tu_password``` con los datos verdaderos de conexión.
 
+Una vez editado el archivo, hay que generar una clave de aplicación
+
+```
+php artisan key:generate
+```
+
 ## Paso 4: Crear base de datos y tablas
 
 El proyecto cuenta con un comando para poder crear la base
