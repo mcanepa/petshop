@@ -1,35 +1,8 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 146.1 36.1" style="enable-background:new 0 0 146.1 36.1;" xml:space="preserve" preserveAspectRatio="xMinYMid meet">
-<style type="text/css">
-	.st0{fill:#3B3C43;}
-	.st1{fill:#2CAD6E;}
-</style>
-<g id="Capa_1">
-	<g>
-		<path class="st0" d="M81.1,10.2c1.5-0.8,3.1-1.2,5.1-1.2c2.2,0,4.1,0.5,5.6,1.6c1.5,1.1,2.5,2.6,2.8,4.4h-2.5
-			c-0.4-1.3-1.1-2.2-2.2-2.9c-1.1-0.7-2.3-1-3.9-1c-1.4,0-2.6,0.3-3.7,0.9c-1.1,0.6-1.9,1.5-2.5,2.5c-0.6,1.1-0.9,2.3-0.9,3.7
-			c0,1.4,0.3,2.6,0.9,3.7c0.6,1.1,1.4,1.9,2.5,2.5c1.1,0.6,2.3,0.9,3.6,0.9c1.2,0,2.3-0.2,3.3-0.6c1-0.4,1.7-1,2.3-1.8
-			c0.5-0.8,0.8-1.7,0.8-2.8v-0.6h-6.1v-2.1h8.5v2c0,1.2-0.5,5.3-4.3,7.2c-1.7,0.8-4,0.8-4.6,0.8c-1.8,0-3.5-0.4-4.9-1.2
-			c-1.4-0.8-2.6-1.9-3.4-3.3c-0.8-1.4-1.2-3-1.2-4.8c0-1.8,0.4-3.4,1.2-4.8C78.6,12.1,79.7,11,81.1,10.2"></path>
-		<g>
-			<rect x="18.5" y="15.9" class="st1" width="17.5" height="4.3"></rect>
-			<path class="st1" d="M27.6,27.9c-2.5,2.5-6,3.9-9.6,3.9c-7.6,0-13.8-6.2-13.8-13.7c0-7.6,6.2-13.7,13.8-13.7
-				c3.8,0,7.5,1.6,10.1,4.4l0.4,0.4l4-1.9l-0.7-0.8C28.4,2.3,23.4,0,18.1,0C8.1,0,0,8.1,0,18.1c0,10,8.1,18.1,18.1,18.1
-				c5.1,0,9.9-2.1,13.3-5.9l0.7-0.8l-4.1-2L27.6,27.9z"></path>
-		</g>
-		<rect x="123.7" y="9" class="st0" width="2.3" height="18.6"></rect>
-		<polygon class="st0" points="136,27.5 136,11.2 128.3,11.2 128.3,9.1 146.1,9.1 146.1,11.2 138.3,11.2 138.3,27.5 		"></polygon>
-		<rect x="69.8" y="9.2" class="st0" width="2.5" height="18.2"></rect>
-		<path class="st0" d="M51.9,10.2c1.5-0.8,3.2-1.2,5.1-1.2c2.2,0,4.1,0.5,5.6,1.6c1.5,1.1,2.5,2.6,2.8,4.4H63
-			c-0.4-1.3-1.1-2.2-2.2-2.9c-1.1-0.7-2.3-1-3.9-1c-1.4,0-2.6,0.3-3.7,0.9c-1.1,0.6-1.9,1.5-2.5,2.5c-0.6,1.1-0.9,2.3-0.9,3.7
-			c0,1.4,0.3,2.6,0.9,3.7c0.6,1.1,1.4,1.9,2.5,2.5c1.1,0.6,2.3,0.9,3.6,0.9c1.2,0,2.3-0.2,3.3-0.6c1-0.4,1.7-1,2.3-1.8
-			c0.5-0.8,0.8-1.7,0.8-2.8v-0.6h-6.1v-2.1h8.5v2c0,1.2-0.5,5.3-4.3,7.2c-1.7,0.8-4,0.8-4.6,0.8c-1.8,0-3.5-0.4-4.9-1.2
-			c-1.4-0.8-2.6-1.9-3.4-3.3c-0.8-1.4-1.2-3-1.2-4.8c0-1.8,0.4-3.4,1.2-4.8C49.4,12.1,50.5,11,51.9,10.2"></path>
-		<polygon class="st0" points="107.6,9.2 104.6,9.2 96.9,27.4 99.5,27.4 106,11.7 112.6,27.4 115.2,27.4 		"></polygon>
-	</g>
-</g>
-<g id="Capa_2">
-</g>
-</svg></a></p>
+<p align="center">
+	<a href="https://laravel.com" target="_blank">
+		<img src="data:image/png;base64,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" alt="">
+	</a>
+</p>
 
 
 ## ¡GIGA IT petshop app!
