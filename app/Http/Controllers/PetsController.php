@@ -1,25 +1,29 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Http\Controllers;
 
 use App\Models\Pets;
 use Illuminate\Http\Request;
+use Illuminate\View\View;
+use Illuminate\Http\RedirectResponse;
 
 class PetsController extends Controller
 {
-	public function index(Request $request)
+	public function index(Request $request): View
 	{
 		$pets = Pets::paginate(10);
 
 		return view("pets.index", compact("pets"));
 	}
 
-	public function create()
+	public function create(): View
 	{
 		return view("pets.create");
 	}
 
-	public function store(Request $request)
+	public function store(Request $request): RedirectResponse
 	{
 		try
 		{

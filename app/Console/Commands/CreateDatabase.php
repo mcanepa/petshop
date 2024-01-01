@@ -24,7 +24,7 @@ class CreateDatabase extends Command
     /**
      * Execute the console command.
      */
-    public function handle()
+    public function handle(): void
     {
         $database = config("database.connections.mysql.database");
 
@@ -39,7 +39,7 @@ class CreateDatabase extends Command
         $this->reconnnect($database);
     }
 
-    private function reconnnect($db)
+    private function reconnnect(?string $db): void
     {
         config(["database.connections.mysql.database" => $db]);
 
