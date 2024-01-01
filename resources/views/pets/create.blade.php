@@ -6,7 +6,7 @@
 @csrf
 	<div class="mb-3">
 		<label class="form-label">Nombre: </label>
-		<input type="text" name="name" class="form-control" value="{{ old('name') }}">
+		<input type="text" name="name" class="form-control" value="{{ old('name') }}" required>
 	</div>
 	<div class="mb-3">
 		<label class="form-label">Fecha de nacimiento:<input type="radio" name="age_type" value="exact" @if(old('age_type') == 'exact' || !old('age_type')) checked='checked' @endif></label>
@@ -14,7 +14,7 @@
 		<label class="form-label">Edad aproximada:<input type="radio" name="age_type" value="approximate" @if(old('age_type') == 'approximate') checked='checked' @endif></label>
 
 		<div id="age_exact">
-			<input type="date" name="birthday" id="birthday" class="form-control" value="{{ old('birthday') }}">
+			<input type="date" name="birthday" id="birthday" class="form-control" value="{{ old('birthday') }}" required>
 		</div>
 		<div id="age_approximate">
 		<div class="row">
